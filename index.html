@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .bg {
+        background: url('covidbg1.jpg');
+        background-size: cover;
+        margin-top: -27px;
+
+    }
+
+    .header {
+        display: inline;
+
+
+    }
+
+    .left {
+        display: inline block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 20px;
+        top: 0px;
+
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+        color: white;
+    }
+
+    .left img {
+        width: 136px;
+        float: left;
+    }
+
+    .mid {
+
+        display: block;
+        width: 42%;
+        margin-top: 24px;
+        margin-left: 719px;
+        padding-top: 13px;
+        /*border: 2px solid green;*/
+
+    }
+
+    .right {
+        position: absolute;
+        right: 25px;
+        top: 23px;
+        display: inline-block;
+        /*border: 2px solid brown;*/
+    }
+
+    .navbar {
+        display: inline block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 34px 23px;
+        color: white;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgba(245, 241, 241, 0.822);
+    }
+
+    .btn {
+        margin: 0px 7px;
+        background-color: white;
+        color: black;
+        padding: 0px 16px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: lightgray;
+        color: black;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .pics {
+        /*border: 2px solid white;*/
+        margin: 2px 26px;
+        width: 520px;
+        height: 420px;
+        float: left;
+    }
+
+    .pics img {
+        width: 520px;
+        height: 420px;
+        border: 4px solid white;
+        border-radius: 15px;
+    }
+
+    .info {
+        /*border: 2px solid white;*/
+        margin: 139px 611px;
+        width: 867px;
+        height: 450px;
+        color: white
+    }
+
+    .heading {
+        font-size: xx-large;
+        display: inline;
+    }
+
+    .back {
+        background: url('pandemic1.jpg');
+        background-size: cover;
+
+    }
+
+    .who {
+        /*border: 2px solid blue;*/
+        width: 40%;
+        margin-top: -130px;
+        margin-left: 478px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .who img {
+        height: 50px;
+        width: 50px;
+        filter: invert(100%)
+    }
+
+    #sty {
+        color: black;
+        background-color: black;
+        width: 2.5%;
+        margin-top: -50px;
+        align: center;
+        height: 2px;
+
+    }
+
+    .bg1 {
+        border: 2px solid black;
+        margin: 10px 0px;
+        margin-bottom: 10px;
+        background: url('pandemic2.jpg');
+        background-size: cover;
+
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 108px 705px;
+        padding: 44px;
+        width: 33%;
+        border-radius: 28px;
+        color: white;
+
+    }
+
+    .form-grp input {
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 7.5px auto;
+        border-radius: 7.5px;
+        font-size: 16px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .container h1 {
+        text-align: left;
+        font-size: xx-large;
+        margin-bottom: 0px;
+
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: 20px auto;
+
+    }
+
+    footer {
+        background: rgb(65, 65, 160);
+        height: auto;
+        width: 100%;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding-top: 2px;
+        color: #fff
+    }
+
+    .footer-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-cont h3 {
+        font-size: 2.2 rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+
+    }
+
+    .footer-cont p {
+        max-width: 500px;
+        margin: 5px auto;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+    .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 2rem 3rem 0;
+    }
+
+    .socials li {
+        margin: 0 10px;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .socials a i {
+        font-size: 1.1 rem;
+    }
+
+    .socials a:hover {
+        color: aqua;
+    }
+
+    .footer-bottom {
+        background: black;
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+        opacity: 0.4;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    #dg {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <header class="header">
+            <!-- For logo -->
+            <div class="left">
+                <img src="MASK.png" alt="">
+                <div>COVIDPEDIA</div>
+            </div>
+            <!-- For navigation -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="RecentUpdates.html">RECENT UPDATES</a></li>
+                    <!--<li><a href="#">HOSPITAL AVAILABILITY</a></li>-->
+                    <li><a href="vaccine.html">VACCINE RELATED</a></li>
+                    <li><a href="ourprds.html">OUR PRODUCTS</a></li>
+                </ul>
+            </div>
+            <!-- For buttons -->
+            <div class="right">
+                <button class="btn"><a href="about.html" target="_blank">ABOUT US</a></button>
+                <!--<button class="btn">CONTACT US</button> -->
+            </div>
+        </header>
+        <section>
+            <div class="pics">
+                <img src="https://source.unsplash.com/720x600/?ppe-kits,sanitizer,covid-19" alt="">
+            </div>
+            <div class="info">
+                <span class="heading"><b>About Corona Virus Disease</b></span><br>
+                <span class="heading">COVID-19</b></span> <br>
+                <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+                    Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness
+                    and recover without requiring special treatment. Older people, and those with underlying medical
+                    problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more
+                    likely to develop serious illness. The best way to prevent and slow down transmission is to be well
+                    informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and
+                    others from infection by washing your hands or using an alcohol based rub frequently and not
+                    touching your face.
+                </p>
+                <center> <button class="btn"><a
+                            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public#:~:text=Protect%20yourself%20and%20others%20from,a%20bent%20elbow%20or%20tissue."
+                            target="_blank">PREVENTION</a></button>
+                    <button class="btn"><a
+                            href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"
+                            target="_blank">SYMPTOMPS</a></button>
+                </center>
+
+            </div>
+
+        </section>
+    </div>
+    <section>
+        <div class="back">
+            <div class="who">
+                <center><img src="dq1.png" alt=""></center>
+                <p>I envision a world in which everyone can live healthy, productive lives, regardless of who
+                    they are or where they live. I believe the global commitment to sustainable development –
+                    enshrined in the Sustainable Development Goals – offers a unique opportunity to address the
+                    social, economic and political determinants of health and improve the health and wellbeing of
+                    people everywhere. Achieving this vision will require a strong, effective WHO that is able to
+                    meet emerging challenges and achieve the health objectives of the Sustainable Development Goals.
+                    We need a WHO – fit for the 21st century – that belongs to all, equally. We need a WHO that is
+                    efficiently managed, adequately resourced and results driven, with a strong focus on transparency,
+                    accountability and value for money.</p>
+                <br><br>
+                <hr id="sty">
+                <center>
+                    <p id="dg"><b>Dr Tedros Adhanom Ghebreyesu</b><br>
+                        WHO Director-General</p>
+                </center>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg1">
+            <div class="container">
+                <h1><b><u>CONTACT US:</u></b></h1>
+                <form name="myForm" onsubmit="return validateForm()">
+                    <div class="form-grp">
+                        <input type="text" name="fname" id="fname" placeholder="Enter your Name.">
+                    </div>
+                    <div class="form-grp">
+                        <input type="number" name="phno" id="phno" placeholder="Enter your Phone Number.">
+                    </div>
+                    <div class="form-grp">
+                        <input type="email" name="email" id="email" placeholder="Enter your Email id.">
+                    </div>
+                    <div class="form-grp">
+                        <input type="number" name="age" id="age" placeholder="Enter your Age.">
+                    </div>
+                    <button class="btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-cont">
+            <h3><b>COVIDPEDIA</b></h3>
+            <p>A website meant solely for covid-related issues. We are trying to help people during the time of crisis
+                caused due to pandemic.
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2021 COVIDPEDIA | Designed by MSD</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        let y = document.forms["myForm"]["phno"].value;
+        let z = document.forms["myForm"]["email"].value;
+        if (x == "" && y == "" && z == "") {
+            alert("Name, Phone no and Email must be filled out");
+            return false;
+        }
+        else if (x == "" && y == "") {
+            alert("Name and Phone no must be filled out");
+            return false;
+        }
+
+        else if (x == "" && z == "") {
+            alert("Name and Email must be filled out");
+            return false;
+        }
+        else if (y == "" && z == "") {
+            alert("Phone no and Email must be filled out");
+            return false;
+        }
+        else if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        else if (y == "") {
+            alert("Phone no. must be filled out");
+            return false;
+        }
+
+        else if (z == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+        else {
+            myFunction();
+        }
+    }
+
+    function myFunction() {
+        window.confirm("Your contact details has been stored. We will contact you very soon.");
+    }
+
+</script>
+
+</html>

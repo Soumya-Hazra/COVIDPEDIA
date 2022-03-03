@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .bg {
+        background: url('absbg.jpg');
+        background-size: cover;
+        margin-top: -54px;
+        height: 533px;
+
+    }
+
+    .header {
+        display: inline;
+
+
+    }
+
+    .left {
+        display: inline block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 10px;
+        top: 9px;
+
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+        color: white;
+    }
+
+    .left img {
+        width: 136px;
+        float: left;
+    }
+
+    .mid {
+
+        display: block;
+        /*width: 56%;*/
+        margin-top: 54px;
+        margin-left: 696px;
+        padding-top: 12px;
+        height: 50px;
+        /*border: 2px solid green;*/
+
+    }
+
+    .navbar {
+        display: inline block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 34px 23px;
+        color: white;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: none;
+        color: rgba(245, 241, 241, 0.822);
+        font-size: 21px;
+    }
+
+    .btn {
+        margin: 0px 7px;
+        background-color: lightgray;
+        color: black;
+        padding: 0px 16px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    .pics {
+        /*border: 2px solid white;*/
+        margin: -16px 107px;
+        width: 520px;
+        height: 420px;
+        float: right;
+    }
+
+    .pics img {
+        width: 450px;
+        height: 350px;
+        border: 3px solid white;
+        border-radius: 15px;
+    }
+
+    .info {
+        /*border: 2px solid white;*/
+        margin: 66px 142px;
+        width: 36%;
+        /* height: 123%; */
+        color: white;
+        padding: 50px;
+    }
+
+    .heading {
+        font-size: xx-large;
+        display: inline;
+    }
+
+    #myframe {
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+</style>
+
+
+<body>
+    <div class="bg">
+        <header class="header">
+            <!-- For logo -->
+            <div class="left">
+                <img src="MASK.png" alt="">
+                <div>COVIDPEDIA</div>
+            </div>
+            <!-- For navigation -->
+            <div class="mid">
+                <ul class="navbar">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="RecentUpdates.html">RECENT UPDATES</a></li>
+                    <li><a href="vaccine.html">VACCINE RELATED</a></li>
+                    <li><a href="ourprds.html">OUR PRODUCTS</a></li>
+                </ul>
+            </div>
+            <!-- For buttons -->
+        </header>
+        <section>
+            <div class="pics">
+                <img src="team.jpg" alt="">
+            </div>
+            <div class="info">
+                <span class="heading"><b>ABOUT US</b></span><br>
+                <p>
+                    COVIDPEDIA is a website meant solely for covid-related issues. We are trying to help
+                    people during the time of crisis caused due to pandemic. In this website you can find
+                    every minute details about covid. This website is absolutely free. You can also purchase
+                    all kind of covid related products from our online store COVISTORE at very cheap rates.
+                    Our main moto is to provide our visitor with all sort of ammneties under a single shed.
+                </p>
+                <br>
+                <center> <button class="btn" id="btndev" onclick="myFunction()" ondblclick="Function()">READ
+                        MORE</button></center>
+
+            </div>
+
+        </section>
+    </div>
+    <section>
+        <iframe id="myFrame" src="dev.html" height=0px width=100% frameborder=0 scrolling="no"></iframe>
+    </section>
+
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("myFrame").height = "1030";
+        document.getElementById("btndev").innerHTML = "READ LESS <"
+    }
+    function Function() {
+        document.getElementById("myFrame").height = "0";
+        document.getElementById("btndev").innerHTML = "READ MORE >"
+    }
+</script>
+
+</html>

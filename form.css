@@ -1,0 +1,65 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('for6.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+  
+    color: rgb(255, 254, 254);
+    position: absolute;
+    top: 10%;
+    left: 37%;
+}
+.container h1{
+    
+    display: inline-block;
+    font-size:40px ;
+    border-bottom: 5px solid rgb(27, 255, 167);
+    margin-bottom: 43px;
+    padding: 13px;
+}
+.box{
+    width: 100%;
+    border-bottom:2px solid rgb(27, 255, 167); 
+    margin: 30px 0;
+    
+}
+.box input{
+    display: inline-block;
+    background: none;
+    width: 90%;
+    /* margin-left: 25px; */
+    margin: 20px 0;
+    
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.box i{
+    width: 20px;
+    /* padding: 0 10px; */
+    text-align: center;
+}
+#btn{
+    cursor: pointer;
+    outline: none;
+    width: 38%;
+    margin: 12px 0;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 30px;
+    background: none;
+    color: white;
+    font-weight: bold;
+}
+#btn:hover{
+   
+    color: rgb(27, 255, 167);
+    
+}

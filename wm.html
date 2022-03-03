@@ -1,0 +1,813 @@
+<html>
+    <head>
+        <title> UPDATES BY WORLD MAP</title>
+    </head>
+    <style>
+        img{
+            width: max-content;
+            height: max-content;
+        }
+
+        .popup .overlay{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 100vw;;
+            background: url('wm.jpg');
+            width: max-content;
+            height: max-content;
+            z-index: 1;
+            display: none;
+        }
+       
+        .popup .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0);
+            background: url('popup.jpg');
+            width: 550px;
+            height: 250px;
+            z-index: 2;
+            font-family:'Baloo Bhai 2',cursive;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+            border-radius: 15px;
+        }
+        
+
+        .popup .close-btn{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background:red;
+            color:black;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .popup .left{
+            float: left;
+            width: 320px;
+            height: 220px;
+
+        }
+
+        .popup .right{
+            float: right;
+            width: 150px;
+            height: 220px;
+            
+        }
+        .right img{
+            margin: 5px;
+            margin-top: 12px;
+            padding-top: 5px;
+            width: 130px;
+            height: 105px;
+            border-radius: 15px;
+        }
+        .popup.active .overlay{
+            display: block;
+        }
+
+        .popup.active .content{
+            transition: all 300ms ease-in-out;
+            transform: translate(-50%,-50%) scale(1);
+        }
+    </style>
+    <body>
+        
+        <img src="wm.jpg" alt="worldmap" usemap="#worldmap"/>
+        <map name="worldmap">
+                <area shape="rect" coords="25,13,124,94" href="RecentUpdates.html" alt="">
+                <area shape="rect" coords="1082,547,1165,635" alt="INDIA"  onclick="india()" href="#" >
+                <area shape="rect" coords="205,417,376,518" onclick="USA()" href="#" alt="USA">
+                <area shape="rect" coords="451,683,561,772" onclick="Brazil()" href="#" alt="BRAZIL">
+                <area shape="ract" coords="895,205,1412,364" onclick="Russia()" href="#" alt="RUSSIA">
+                <area shape="rect" coords="730,375,757,410" onclick="England()" href="#" alt="ENGLAND">
+                <area shape="rect" coords="1121,454,1295,528" onclick="China()" href="#" alt="CHINA">
+                <area shape="rect" coords="1288,762,1454,886" onclick="Australia()" href="#" alt="AUSTRALIA">
+                <area shape="rect" coords="795,459,826,495" onclick="Italy()" href="#" alt="ITALY">
+                <area shape="rect" coords="435,825,481,945" onclick="Argentina()" href="#" alt="ARGENTINA">
+                <area shape="rect" coords="744,430,776,456" onclick="France()" href="#" alt="FRANCE">
+                <area shape="rect" coords="727,464,748,489" onclick="Spain()" href="#" alt="SPAIN">
+                <area shape="rect" coords="880,476,935,494" onclick="Turkey()" href="#" alt="TURKEY">
+                <area shape="rect" coords="979,497,1031,530" onclick="Iran()" href="#" alt="IRAN">
+                <area shape="rect" coords="390,651,425,678" onclick="Colombia()" href="#" alt="COLOMBIA">
+                <area shape="rect" coords="785,404,809,424" onclick="Germany()" href="#" alt="GERMANY">
+                <area shape="rect" coords="229,538,312,601" onclick="Mexico()" href="#" alt="MEXICO">
+                <area shape="rect" coords="197,252,463,409" onclick="Canada()" href="#" alt="CANADA">
+                <area shape="rect" coords="819,397,846,416" onclick="Poland()" href="#" alt="POLAND">
+                <area shape="rect" coords="832,824,891,847" onclick="SA()" href="#" alt="SOUTH AFRICA">
+                <area shape="rect" coords="1259,687,1394,723" onclick="Indo()" href="#" alt="INDONESIA">
+                <area shape="rect" coords="1366,450,1400,496" onclick="Japan()" href="#" alt="JAPAN">
+                <area shape="rect" coords="861,409,904,427" onclick="Ukraine()" href="#" alt="UKRAINE">
+                <area shape="rect" coords="1064,520,1089,534" onclick="Pak()" href="#" alt="PAKISTAN">
+                <area shape="rect" coords="377,707,405,731" onclick="Peru()" href="#" alt="PERU">
+                <area shape="rect" coords="938,509,966,523" onclick="Iraq()" href="#" alt="IRAQ">
+                <area shape="rect" coords="406,806,430,890" onclick="Chile()" href="#" alt="CHILE">
+                <area shape="recr" coords="1161,554,1181,567" onclick="Bangladesh()" href="#" alt="BANGLADESH">
+                <area shape="rect" coords="1305,605,1365,643" onclick="Phil()" href="#" alt="PHILIPPINES">
+                <area shape="rect" coords="702,471,720,487" onclick="Portugal()" href="#" alt="PORTUGAL">
+                <area shape="rcet" coords="1231,653,1265,676" onclick="Malaysia()" href="#" alt="MALAYSIA">
+                <area shape="rect" coords="935,547,987,581" onclick="Saudi()" href="#" alt="SAUDI ARABIA">
+
+        </map>
+        <div class="popup" id="india">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="india()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN INDIA </h2>
+                <section>
+                <div class="right"><img src="ind.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 3,01,34,445</li>
+                    <li> TOTAL DEATHS : 3,93,338</li>
+                    <li> TOTAL RECOVERED : 2,91,28,267</li>
+                    <li> ACTIVE CASES : 6,12,840</li>
+                    <li> SERIOUS : 8944 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="USA">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="USA()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN USA </h2>
+                <section>
+                <div class="right"><img src="USA.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 3,44,64,956</li>
+                    <li> TOTAL DEATHS : 6,18,685</li>
+                    <li> TOTAL RECOVERED : 2,88,71,914</li>
+                    <li> ACTIVE CASES : 49,74,357</li>
+                    <li> SERIOUS : 3884 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Brazil">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Brazil()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN BRAZIL </h2>
+                <section>
+                <div class="right"><img src="brazil.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 1,82,43,483</li>
+                    <li> TOTAL DEATHS : 5,09,282</li>
+                    <li> TOTAL RECOVERED : 1,65,11,701</li>
+                    <li> ACTIVE CASES : 12,22,500</li>
+                    <li> SERIOUS : 8318 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Canada">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Canada()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN CANADA </h2>
+                <section>
+                <div class="right"><img src="canada.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 14,11,634</li>
+                    <li> TOTAL DEATHS : 26,191</li>
+                    <li> TOTAL RECOVERED : 13,76,094</li>
+                    <li> ACTIVE CASES : 9349</li>
+                    <li> SERIOUS : 512 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="China">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="China()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN CHINA </h2>
+                <section>
+                <div class="right"><img src="china.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 91,693</li>
+                    <li> TOTAL DEATHS : 4636</li>
+                    <li> TOTAL RECOVERED : 86571</li>
+                    <li> ACTIVE CASES : 486</li>
+                    <li> SERIOUS : 14 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="France">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="France()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN FRANCE </h2>
+                <section>
+                <div class="right"><img src="france.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 57,64,329</li>
+                    <li> TOTAL DEATHS : 1,10,906</li>
+                    <li> TOTAL RECOVERED : 55,90,123</li>
+                    <li> ACTIVE CASES : 63,300</li>
+                    <li> SERIOUS : 1439 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Russia">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Russia()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN RUSSIA </h2>
+                <section>
+                <div class="right"><img src="Russia.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 53,88,695</li>
+                    <li> TOTAL DEATHS : 1,31,463</li>
+                    <li> TOTAL RECOVERED : 49,15,615</li>
+                    <li> ACTIVE CASES : 3,41,617</li>
+                    <li> SERIOUS : 2300 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="England">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="England()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN ENGLAND </h2>
+                <section>
+                <div class="right"><img src="england.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 46,84,572</li>
+                    <li> TOTAL DEATHS : 1,28,048</li>
+                    <li> TOTAL RECOVERED : 43,10,259</li>
+                    <li> ACTIVE CASES : 2,46,265</li>
+                    <li> SERIOUS : 246 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Germany">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Germany()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN GERMANY </h2>
+                <section>
+                <div class="right"><img src="germany.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 37,33,077</li>
+                    <li> TOTAL DEATHS : 91,178</li>
+                    <li> TOTAL RECOVERED : 36,16,800</li>
+                    <li> ACTIVE CASES : 25,099</li>
+                    <li> SERIOUS : 889 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Argentina">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Argentina()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN ARGENTINA </h2>
+                <section>
+                <div class="right"><img src="arg.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 43,50,564</li>
+                    <li> TOTAL DEATHS : 91,438</li>
+                    <li> TOTAL RECOVERED : 39,67,633</li>
+                    <li> ACTIVE CASES : 2,91,493</li>
+                    <li> SERIOUS : 7199 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Spain">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Spain()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN SPAIN</h2>
+                <section>
+                <div class="right"><img src="spain.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 37,77,539</li>
+                    <li> TOTAL DEATHS : 80,766</li>
+                    <li> TOTAL RECOVERED : 35,72,254</li>
+                    <li> ACTIVE CASES : 1,24,519</li>
+                    <li> SERIOUS : 659 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Mexico">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Mexico()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN MEXICO </h2>
+                <section>
+                <div class="right"><img src="mexi.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 24,93,087</li>
+                    <li> TOTAL DEATHS : 2,32,068</li>
+                    <li> TOTAL RECOVERED : 19,82,674</li>
+                    <li> ACTIVE CASES : 2,78,345</li>
+                    <li> SERIOUS : 4798 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Turkey">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Turkey()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN TURKEY </h2>
+                <section>
+                <div class="right"><img src="turkey.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 53,93,248</li>
+                    <li> TOTAL DEATHS : 49,417</li>
+                    <li> TOTAL RECOVERED : 52,54,708</li>
+                    <li> ACTIVE CASES : 89,123</li>
+                    <li> SERIOUS : 752 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Australia">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Australia()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN AUSTRALIA </h2>
+                <section>
+                <div class="right"><img src="aus.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 30,424</li>
+                    <li> TOTAL DEATHS : 910</li>
+                    <li> TOTAL RECOVERED : 29,307</li>
+                    <li> ACTIVE CASES : 207</li>
+                    <li> SERIOUS : 1 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Iran">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Iran()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN IRAN </h2>
+                <section>
+                <div class="right"><img src="iran.jpg""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 31,40,129</li>
+                    <li> TOTAL DEATHS : 83,473</li>
+                    <li> TOTAL RECOVERED : 27,97,105</li>
+                    <li> ACTIVE CASES : 2,59,551</li>
+                    <li> SERIOUS : 3255 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Iraq">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Iraq()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN IRAQ </h2>
+                <section>
+                <div class="right"><img src="iraq.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 13,11,093</li>
+                    <li> TOTAL DEATHS : 16,999</li>
+                    <li> TOTAL RECOVERED : 12,17,982</li>
+                    <li> ACTIVE CASES : 76,112</li>
+                    <li> SERIOUS : 518 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Japan">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Japan()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN JAPAN </h2>
+                <section>
+                <div class="right"><img src="japan.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 7,89,440</li>
+                    <li> TOTAL DEATHS : 14,553</li>
+                    <li> TOTAL RECOVERED : 7,56,293</li>
+                    <li> ACTIVE CASES : 18,594</li>
+                    <li> SERIOUS : 629 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Poland">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Poland()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN POLAND </h2>
+                <section>
+                <div class="right"><img src="poland.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 28,79,336</li>
+                    <li> TOTAL DEATHS : 74,917</li>
+                    <li> TOTAL RECOVERED : 26,51,045</li>
+                    <li> ACTIVE CASES : 1,53,374</li>
+                    <li> SERIOUS : 201 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Indonesia">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Indo()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN INDONESIA </h2>
+                <section>
+                <div class="right"><img src="indo.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 20,53,995</li>
+                    <li> TOTAL DEATHS : 55,949</li>
+                    <li> TOTAL RECOVERED : 18,26,504</li>
+                    <li> ACTIVE CASES : 1,71,542</li>
+                    <li> SERIOUS : - </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Pak">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Pak()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN PAKISTAN </h2>
+                <section>
+                <div class="right"><img src="pak.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 9,52,907</li>
+                    <li> TOTAL DEATHS : 22,152</li>
+                    <li> TOTAL RECOVERED : 8,97,834</li>
+                    <li> ACTIVE CASES : 32,921</li>
+                    <li> SERIOUS : 2029 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Ukraine">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Ukraine()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN UKRAINE </h2>
+                <section>
+                <div class="right"><img src="ukr.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 22,32,790</li>
+                    <li> TOTAL DEATHS : 52,234</li>
+                    <li> TOTAL RECOVERED : 21,60,137</li>
+                    <li> ACTIVE CASES : 20,419</li>
+                    <li> SERIOUS : 177 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Peru">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Peru()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN PERU </h2>
+                <section>
+                <div class="right"><img src="peru.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 20,40,186</li>
+                    <li> TOTAL DEATHS : 1,91,286</li>
+                    <li> TOTAL RECOVERED : N/A</li>
+                    <li> ACTIVE CASES : N/A</li>
+                    <li> SERIOUS : 2461 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="SA">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="SA()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN SOUTH AFRICA </h2>
+                <section>
+                <div class="right"><img src="sa.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 18,77,143</li>
+                    <li> TOTAL DEATHS : 59,406</li>
+                    <li> TOTAL RECOVERED : 16,75,827</li>
+                    <li> ACTIVE CASES : 1,41,910</li>
+                    <li> SERIOUS : 546</li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Italy">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Italy()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN ITALY </h2>
+                <section>
+                <div class="right"><img src="italy.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 42,55,700</li>
+                    <li> TOTAL DEATHS : 1,27,362</li>
+                    <li> TOTAL RECOVERED : 40,66,029</li>
+                    <li> ACTIVE CASES : 62,309</li>
+                    <li> SERIOUS : 328 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Colombia">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Colombia()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN COLOMBIA </h2>
+                <section>
+                <div class="right"><img src="col.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 40,60,013</li>
+                    <li> TOTAL DEATHS : 1,02,636</li>
+                    <li> TOTAL RECOVERED : 37,69,887</li>
+                    <li> ACTIVE CASES : 1,87,490</li>
+                    <li> SERIOUS : 8155 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Chile">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Chile()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN CHILE </h2>
+                <section>
+                <div class="right"><img src="chile.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 15,69,784</li>
+                    <li> TOTAL DEATHS : 33,103</li>
+                    <li> TOTAL RECOVERED : 15,09,297</li>
+                    <li> ACTIVE CASES : 27,384</li>
+                    <li> SERIOUS : 2823 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Malaysia">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Malaysia()()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN MALAYSIA </h2>
+                <section>
+                <div class="right"><img src="malaysia.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 7,85,039</li>
+                    <li> TOTAL DEATHS : 5574</li>
+                    <li> TOTAL RECOVERED : 7,10,018</li>
+                    <li> ACTIVE CASES : 69,447</li>
+                    <li> SERIOUS : 923 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Saudi">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Saudi()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN SAUDI ARABIA </h2>
+                <section>
+                <div class="right"><img src="saudi.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 4,94,032</li>
+                    <li> TOTAL DEATHS : 7891</li>
+                    <li> TOTAL RECOVERED : 4,74,368</li>
+                    <li> ACTIVE CASES : 11,173</li>
+                    <li> SERIOUS : 1350 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Bangladesh">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Bangladesh()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN BANGLADESH </h2>
+                <section>
+                <div class="right"><img src="bangla.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 9,54,881</li>
+                    <li> TOTAL DEATHS : 15,229</li>
+                    <li> TOTAL RECOVERED : 8,39,082</li>
+                    <li> ACTIVE CASES : 1,00,570</li>
+                    <li> SERIOUS : 1201 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Portugal">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Portugal()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN PORTUGAL </h2>
+                <section>
+                <div class="right"><img src="portugal.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 8,90,571</li>
+                    <li> TOTAL DEATHS : 17,117</li>
+                    <li> TOTAL RECOVERED : 8,34,624</li>
+                    <li> ACTIVE CASES : 38,830</li>
+                    <li> SERIOUS : 136</li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="popup" id="Phil">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="Phil()">&times;</div>
+                <h2 style="text-align: center;"> CORONA VIRUS IN PHILIPPINES </h2>
+                <section>
+                <div class="right"><img src="philippines.jpg" alt=""></div>
+                <div class="left">
+                <ul>
+                    <li> TOTAL CASES : 14,41,746</li>
+                    <li> TOTAL DEATHS : 25,192</li>
+                    <li> TOTAL RECOVERED : 13,64,960</li>
+                    <li> ACTIVE CASES : 51,594</li>
+                    <li> SERIOUS : 1881 </li>
+                </ul>
+                </div>
+                </section>
+            </div>
+        </div>
+        <script>
+            function india(){
+                document.getElementById("india").classList.toggle("active");
+            }
+            function USA(){
+                document.getElementById("USA").classList.toggle("active");
+            }
+            function Brazil(){
+                document.getElementById("Brazil").classList.toggle("active");
+            }
+            function Canada(){
+                document.getElementById("Canada").classList.toggle("active");
+            }
+            function China(){
+                document.getElementById("China").classList.toggle("active");
+            }
+            function France(){
+                document.getElementById("France").classList.toggle("active");
+            }
+            function Russia(){
+                document.getElementById("Russia").classList.toggle("active");
+            }
+            function England(){
+                document.getElementById("England").classList.toggle("active");
+            }
+            function Germany(){
+                document.getElementById("Germany").classList.toggle("active");
+            }
+            function Argentina(){
+                document.getElementById("Argentina").classList.toggle("active");
+            }
+            function Spain(){
+                document.getElementById("Spain").classList.toggle("active");
+            }
+            function Australia(){
+                document.getElementById("Australia").classList.toggle("active");
+            }
+            function Mexico(){
+                document.getElementById("Mexico").classList.toggle("active");
+            }
+            function Poland(){
+                document.getElementById("Poland").classList.toggle("active");
+            }
+            function Turkey(){
+                document.getElementById("Turkey").classList.toggle("active");
+            }
+            function Iran(){
+                document.getElementById("Iran").classList.toggle("active");
+            }
+            function Iraq(){
+                document.getElementById("Iraq").classList.toggle("active");
+            }
+            function Indo(){
+                document.getElementById("Indonesia").classList.toggle("active");
+            }
+            function Japan(){
+                document.getElementById("Japan").classList.toggle("active");
+            }
+            function SA(){
+                document.getElementById("SA").classList.toggle("active");
+            }
+            function Peru(){
+                document.getElementById("Peru").classList.toggle("active");
+            }
+            function Pak(){
+                document.getElementById("Pak").classList.toggle("active");
+            }
+            function Ukraine(){
+                document.getElementById("Ukraine").classList.toggle("active");
+            }
+            function Italy(){
+                document.getElementById("Italy").classList.toggle("active");
+            }
+            function Colombia(){
+                document.getElementById("Colombia").classList.toggle("active");
+            }
+            function Saudi(){
+                document.getElementById("Saudi").classList.toggle("active");
+            }
+            function Phil(){
+                document.getElementById("Phil").classList.toggle("active");
+            }
+            function Malaysia(){
+                document.getElementById("Malaysia").classList.toggle("active");
+            }
+            function Portugal(){
+                document.getElementById("Portugal").classList.toggle("active");
+            }
+            function Chile(){
+                document.getElementById("Chile").classList.toggle("active");
+            }
+            function Bangladesh(){
+                document.getElementById("Bangladesh").classList.toggle("active");
+            }
+
+        </script>
+        
+    </body>
+
+</html>

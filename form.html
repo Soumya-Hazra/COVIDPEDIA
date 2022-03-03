@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/6d463a1bed.js" crossorigin="anonymous"></script>
+    <title>FINAL FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form name="myform" onsubmit="return validateForm()">
+    <div class="container">
+        <h1>COVID-STORE </h1>
+            <center><h4>Pow. by COVIDPEDIA <img src="MASK (2).png" alt="" height="20px" width="20px"></h4> </center>
+        <div class="box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" >
+        </div>
+        <div class="box">
+            <i class="fa fa-unlock" aria-hidden="true"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password" >
+        </div>
+        <div class="box">
+            <i class="fa fa-product-hunt" aria-hidden="true"></i>
+            <input type="text" name="text" id="text" placeholder="Enter Name of Product">
+            
+        </div>
+        <div class="box">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+            <input type="number" name="number" id="number" placeholder="Enter Price of Product" >
+        </div>
+        <button id="btn">Submit</button>
+    </div>
+    </form>
+</body>
+<script>
+     function validateForm()
+    {
+        let x=document.forms["myform"]["email"].value;
+        let y=document.forms["myform"]["password"].value;
+        let z=document.forms["myform"]["text"].value;
+        let w=document.forms["myform"]["number"].value;
+        
+        if((x =="" )){
+            alert("Please Enter Your Email Address used in COVIDPEDIA");
+        return false;
+        }
+        else if((y =="")){
+            alert("Please Enter Your contact number used in COVIDPEDIA");
+        return false;
+        }
+        else if (y.length<10){
+        alert("Please Enter Your contact number used in COVIDPEDIA in password and it  must contain minimum 10 digits");
+        }
+        else if((z =="" )){
+            alert("Please Enter Your product name");
+        return false;
+        }
+        else if((z =="" )){
+            alert("Please Enter Your product price");
+        return false;
+        }
+        else{
+            myFunction();
+        }
+    }
+    function myFunction()
+    {
+        window.confirm("Your Details have been successfully registered we will contact you soon for product delivery.");
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .header {
+        display: inline;
+
+
+    }
+
+    .left {
+        display: inline block;
+        /*border: 4px solid black;*/
+        position: absolute;
+        left: 20px;
+        top: 0px;
+
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+        color: black;
+
+    }
+
+    .left img {
+        width: 136px;
+        float: left;
+        filter: invert(20%);
+        z-index: -1;
+    }
+
+    .mid {
+
+        display: block;
+        /*width: 58%%;*/
+        margin-top: -63px;
+        margin-left: 827px;
+        padding-top: 13px;
+        /*border: 2px solid green;*/
+
+    }
+
+    .right {
+        position: absolute;
+        right: 25px;
+        top: 45px;
+        display: inline-block;
+        /*border: 2px solid brown;*/
+    }
+
+    .nav {
+        background: black;;
+        height: 40px;
+        margin-top: 46px;
+        width: 100%;
+        color: white;
+        /*margin-left: 183px;*/
+    }
+    .nav div{
+        font-size: 28px;
+        /*text-align: center;*/
+        margin-left: 139px;
+    }
+
+    .navbar {
+        display: inline block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 34px 23px;
+        color: white;
+    }
+
+    .navbar li a:hover,.navbar li a.active {
+        text-decoration: underline;
+        color: rgba(245, 241, 241, 0.822); 
+    }
+
+    .btn {
+        margin: 3px 7px;
+        background-color: white;
+        color: black;
+        padding: 0px 16px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: 'Baloo Bhai 2', cursive;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .vac{
+       /*border: 2px solid red;*/
+       margin-top: 50px;
+       background: url('vaccine1.jpg');
+       background-size:cover;
+      /* width: 100%;*/
+       }
+       
+    .heading{
+        font-size:xx-large;
+        display: inline;   
+       }
+
+    .vacinfo{
+       width:40%;
+       margin: 40px;
+       padding: 20px;
+       /*border:2px solid blue;*/
+    }
+    .vaclist li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .vaclist li a:hover,.vaclist li a.active {
+        text-decoration: underline;
+        color: black(245, 241, 241, 0.822); 
+    } 
+    .font{
+        font-size: 17px;
+        font-weight: 600;
+        
+    }  
+    .covishield{
+        /*border: 2px solid blue;*/
+        margin-top: -20px;
+        background: url('cdbg.jpg');
+        background-size:cover;
+        height: 40%;
+    }
+    .pics{
+        /*border: 2px solid green;*/
+         margin: 11px 142px;
+         width: 300px;
+         height: 400px;
+         float: left;
+         
+    }
+    .pics img{
+        width: 300px;
+        height: 400px;
+        border: 4px solid white;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.5s;
+    } 
+    .pics img:hover{
+    transform: scale(1.1);
+    }
+    .covishield-info{
+        /*border: 2px solid red;*/
+        width: 48%;
+        margin: 16px 585px;
+        padding: 45px;
+        color:white;
+        font-weight: bold;
+    }
+    .covaxin{
+       /* border: 2px solid blue;*/
+        background: url('cxbg.jpg');
+        background-size:cover;
+        color:white;
+
+    }
+    .covaxin-info{
+    /*border: 2px solid red;*/
+    width: 48%;
+    margin: 20px 121px;
+    padding: 34px;
+    font-weight: bold;
+        
+    }
+    .pics1{
+    /*border: 2px solid green;*/
+    margin: -440px 153px;
+    height: 400px;
+    width: 300px;
+    float: right;
+    cursor: pointer;
+  }
+  .pics1 img{
+    width: 300px;
+    height: 400px;
+    border: 4px solid black;
+    border-radius: 15px;
+    transition: transform 0.5s;
+  }
+  .pics1 img:hover{
+    transform: scale(1.1);
+  }
+  .sputnik{
+        /*border: 2px solid blue;*/
+        margin-top: 0px;
+        background: url('spbg.jpg');
+        background-size:cover;
+    }
+    .pics2{
+         /*border: 2px solid green;*/
+         margin: 14px 142px;
+         width: 300px;
+         height: 400px;
+         float: left;
+    }
+    .pics2 img{
+        width: 300px;
+        height: 400px;
+        border: 4px solid white;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.5s;
+    } 
+    .pics2 img:hover{
+    transform: scale(1.1);
+   }
+    .sputnik-info{
+        /*border: 2px solid red;*/
+        width: 48%;
+        margin: 16px 585px;
+        padding: 35px;
+        font-weight: bold;
+    }
+    .fizer{
+       /* border: 2px solid blue;*/
+       background: url('pfbg.jpg');
+        background-size:cover;
+
+    }
+    .fizer-info{
+    /*border: 2px solid red;*/
+    width: 48%;
+    margin: 20px 121px;
+    padding: 50px;
+    font-weight: bold;
+    color: white;
+        
+    }
+    .pics3{
+    /*border: 2px solid green;*/
+    margin: 15px 132px;
+    height: 400px;
+    width: 300px;
+    float: right;
+  }
+  .pics3 img{
+    width: 300px;
+    height: 400px;
+    border: 4px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    }
+  .pics3 img:hover{
+    transform: scale(1.1);
+  }
+
+  .doctors{
+      /*border: 2px solid green;*/
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-top: 40px;
+      height: 758px;
+  }
+  .doctors hr{
+      height : 6px;
+      width: 20%;
+      background: black;
+  }
+
+  .doctop{
+    width: 25%;
+    float: left;
+    margin: 25px;
+    margin-left: 54px;
+    height: 74%;
+  }
+  .doctors .doctop::before{
+      content: '\201c';
+      font-size: 4rem;
+      position: relative;
+  }
+  .doctors .doctop{
+      text-align: center;
+      padding: 40px 23px;
+      box-shadow: 0 0 20px 0 rgba(233, 2, 2, 0.1);
+      cursor: pointer;
+      transition: transform 0.5s;
+      color:black;
+      
+}
+.doctors .doctop img{
+    width: 100px;
+    margin-top: 20px;
+    clip-path: circle();
+    border-radius: 100px;
+}
+.doctors .doctop:hover{
+    transform: translateY(-10px);
+}
+.doctop p{
+    color:grey;
+}
+.doctop a{
+    text-decoration: none;
+    color: black;
+}
+.doctop a:hover,.doctop a.active {
+        text-decoration: none;
+        color: black(245, 241, 241, 0.822);
+        font-size: 18px;
+        font-weight: bolder; 
+}
+.doctop h5{
+       margin-top: -20px;
+       margin-bottom: 20px;
+}
+/*.doct{
+      border: 2px solid red;
+  }*/
+
+.faqs{
+    padding-top: 60px;
+   /* border:2px solid blue;*/
+    height: 820px;
+    margin-top: 30px;
+    width:100%;
+    background: url('gradient.jpg');
+    background-size:cover;
+    color:white;
+}
+
+.faqs .ques{
+    border: 4px solid white;
+    background: white;
+    width: 21%;
+    height: 27%;
+    float: left;
+    margin-top: 30px;
+    padding: 18px;
+    margin-left: 108px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.faqs .ques:hover{
+  transform: scale(1.1); 
+  
+}
+
+#fqs{
+    width: 40%;
+    text-align: center;
+}
+.knm{
+    /*border: 2px solid green;*/
+    text-align: center;
+    margin-top: 622px;
+    color: white;
+}
+
+.knm a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.knm a:hover,.knm a.active {
+        text-decoration: none;
+        color: white(245, 241, 241, 0.822);
+        font-size: 24px;
+        font-weight: bolder; 
+}
+
+.immunity{
+    /*border: 2px solid red;*/
+    padding-top: 50px;
+    margin: 20px 0px;
+    height: 750px;
+    background: url('mainbg.jpg');
+    background-size:cover;
+}
+
+.main{
+    height: 500px;
+    width: 500px;
+    /* border: 2px solid aqua; */
+    position: relative;
+    top: 52px;
+    left: 599px;
+} 
+.main img{
+    width: 700px;
+    margin-top: 20px;
+    clip-path: circle();
+    border-radius: 100px;
+    position: relative;
+    top: -5px;
+    left: -180px;
+    /*border: 5px solid white;*/
+}  
+
+.mask{
+   /* border: 2px solid green;*/
+    /*height:100px;*/
+    width: 15%;
+    /*margin: 20px 10px;*/
+    position: relative;
+    top: -197px;
+    left: 143px;
+    }
+
+.mask img{
+    width: 100px;
+    margin-top: 20px;
+    clip-path: circle();
+    border-radius: 100px;
+
+}    
+.hand{
+    /*border: 2px solid blue;*/
+    /*height: 100px;*/
+    width: 15%;
+    /*margin: 20px 10px;*/
+    position: relative;
+    top: -696px;
+    left: 229px;
+}
+.hand img{
+    width: 100px;
+    margin-top: 20px;
+    clip-path: circle();
+    border-radius: 100px;
+
+}    
+
+.distance{
+    /*border: 2px solid black; */
+    /* height: 100px; */
+    width: 15%;
+    /* margin: 20px 10px; */
+    position: relative;
+    top: -941px;
+    left: 1090px;
+}
+.distance img{
+    width: 100px;
+    margin-top: 20px;
+    clip-path: circle();
+    border-radius: 100px;
+    background-color: white;
+
+}    
+
+.immu{
+    /*border: 2px solid magenta; */
+    /* height: 20%; */
+    width: 15%;
+    /* margin: 20px 10px; */
+    position: relative;
+    top: -923px;
+    left: 1191px;
+}
+.immu img{
+    width: 100px;
+    margin-top: 20px;
+    clip-path: circle();
+    border-radius: 100px;
+    background-color: white;
+
+} 
+
+.cowin{
+  /*border: 2px solid red;*/
+  padding: 20px 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 501px;
+  background: url('reg.jpg');
+  background-size:cover;
+}
+.cowin hr{
+      border-radius: 50%;
+      height : 6px;
+      width: 60%;
+      background: black;
+  }
+
+
+.log{
+    background: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding-top: 25px;
+    width: 15%;
+    height: 35%;
+    position: relative;
+    /* margin-left: 27px; */
+    top: 14px;
+    left: 117px;
+    box-shadow: 0 0 20px 0 rgb(255 2 255 / 10%);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.appo{
+    background: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding-top: 25px;
+    width: 15%;
+    height: 35%;
+    position: relative;
+    top: -189px;
+    left: 457px;
+    box-shadow: 0 0 20px 0 rgb(23 2 233 / 10%);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.doses{
+    background: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding-top: 25px;
+    width: 15%;
+    height: 35%;
+    position: relative;
+    top: -394px;
+    left: 811px;
+    box-shadow: 0 0 20px 0 rgb(23 2 233 / 10%);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.certificate{
+    background: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding-top: 25px;
+    width: 15%;
+    height: 35%;
+    position: relative;
+    top: -598px;
+    left: 1158px;
+    box-shadow: 0 0 20px 0 rgb(23 2 233 / 10%);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.log:hover, .appo:hover, .doses:hover, .certificate:hover{
+    transform: scale(1.05); 
+}
+.expert{
+    /*border: 2px solid red;*/
+    margin-top:  -98px;
+}
+
+footer{
+            background: rgb(65, 65, 160);
+            height: auto;
+            margin-top: 38px;
+            width: 100%;
+            font-family: 'Baloo Bhai 2', cursive;
+            padding-top: 2px;
+            color: #fff
+        }
+        .footer-cont{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-cont h3{
+            font-size: 2.2 rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+
+        }
+        .footer-cont p{
+            max-width: 500px;
+            margin: 5px auto;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 2rem 3rem 0;
+            }
+        .socials li{
+            margin: 0 10px;
+        }    
+        .socials a{
+            text-decoration: none;
+            color: white;
+        }
+        .socials a i{
+            font-size: 1.1 rem;
+        }
+        .socials a:hover{
+            color: aqua;
+        }
+        
+        .footer-bottom{
+            background: black;
+            width: 100%;
+            padding: 5px 0;
+            text-align: center;
+            opacity: 0.4;
+            }
+
+        .footer-bottom p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        } 
+
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- For logo -->
+    <div class="left">
+            <img src="MASK.png" alt="">
+            <!--<div>COVIDPEDIA</div>-->
+        </div>
+        <div class="nav"><div>
+            <b>COVIDPEDIA</b></div></div>
+        <!-- For navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="RecentUpdates.html">RECENT UPDATES</a></li>
+                <li><a href="ourprds.html">OUR PRODUCTS</a></li>
+            </ul>
+        </div>
+        <!-- For buttons -->
+        <div class="right">
+            <button class="btn"><a href="about.html" target="_blank">ABOUT US</a></button>
+            <!--<button class="btn">ABOUT US</button> -->
+        </div>
+    </header>
+    <section>
+        <div class="vac">
+            <div class="vacinfo">
+               <span class="heading"><b> What is a Vaccine?</b></span>
+                <p>
+                    A vaccine is a biological preparation that provides active acquired immunity 
+                    to a particular infectious disease. A vaccine typically contains an agent that 
+                    resembles a disease-causing microorganism and is often made from weakened or 
+                    killed forms of the microbe, its toxins, or one of its surface proteins. 
+                </p>
+                <span class="heading"><b>Types of COVID VACCINE found in India</b></span>
+                <ol class="vaclist">
+                    <li><a href="#cd">COVISHIELD</a></li>
+                    <li><a href="#cv">COVAXIN</a></li>
+                    <li><a href="#sp">SPUTNIK V</a></li>
+                    <li><a href="#pf">PFIZER</a></li>
+                </ol>
+                <p>
+                    Two vaccines received approval for emergency use in India at the onset of the
+                    programme; <span class="font">Covishield</span>—a brand of the Oxford–AstraZeneca vaccine manufactured 
+                    by the Serum Institute of India, and <span class="font">Covaxin</span>, which was developed by Bharat Biotech. 
+                    In April 2021, the Indian government approved the Russian <span class="font">Sputnik V</span> vaccine (which 
+                    is distributed locally by Dr. Reddy's Laboratories) as a third vaccine, which began 
+                    use in May 2021. On 21 June 2021, India vaccinated 8.4 million of its population in one day.
+                    <span class="font">Pfizer</span> is the fourth one.The vaccine was the first COVID‑19 vaccine to be authorized by a
+                    stringent regulatory authority for emergency use[42][43] and the first cleared for regular use.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="cd">
+        <div class="covishield">
+            <div class="pics">
+                <img src="covishield.jpg" alt="">
+            </div>
+            <div class="covishield-info">
+                <span class="heading"><b> ABOUT COVISHIELD</b></span>
+                 <p> 
+                    The vaccine has a good safety profile, with side effects including injection-site pain, 
+                    headache, and nausea, all generally resolving within a few days. The Oxford–AstraZeneca 
+                    COVID‑19 vaccine is used to provide protection against infection by the SARS-CoV-2 virus 
+                    in order to prevent COVID-19 in adults aged 18 years and older.[1] The medicine is administered 
+                    by two 0.5 ml doses injected intramuscularly into the deltoid muscle (upper arm).four to twelve 
+                    weeks apart, with the WHO recommending the second is given 8 to 12 weeks after the first for 
+                    optimum efficacy. An analysis published on 19 February 2021 showed an efficacy of 76.0% at 
+                    preventing symptomatic COVID-19 beginning at 22 days following the first dose, increasing to 
+                    81.3% when the second dose is given 12 weeks or more after the first.
+                </p>
+               <center><button class="btn"><a href="https://www.seruminstitute.com/product_covishield.php" target="_blank">MORE ABOUT COVISHIELD</a></button></center> 
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" >
+        <div class="covaxin">
+            <div class="covaxin-info">
+                <span class="heading"><b> ABOUT COVAXIN</b></span>
+             <p>
+                Covaxin (codenamed as BBV152) is an inactivated virus-based COVID-19 vaccine developed by
+                Bharat Biotech in collaboration with the Indian Council of Medical Research.In January 2021, 
+                the company published Phase I trial results in The Lancet.[8] On March 8, 2021, Phase II 
+                results were published in The Lancet. The study showed that Phase II trials had a higher 
+                immune response and induced T-cell response due to the difference in dosing regime from 
+                Phase I. The doses in Phase II were given at 4 weeks interval as opposed to 2 weeks in 
+                Phase I. Neutralization response of the vaccine were found significantly higher in Phase II.
+                As an inactivated vaccine, Covaxin uses a more traditional technology that is similar to the 
+                inactivated polio vaccine. Initially, a sample of SARS-CoV-2 was isolated by India's National 
+                Institute of Virology and used to grow large quantities of the virus using vero cells.
+             </p>
+             <center><button class="btn"><a href="https://www.bharatbiotech.com/covaxin.html#:~:text=The%20indigenous%2C%20inactivated%20vaccine%20is,Vero%20Cell%20derived%20platform%20technology." target="_blank">MORE ABOUT COVAXIN</a></button></center> 
+            </div>
+            <div class="pics1">
+               <img src="covaxin.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section id="sp">
+        <div class="sputnik">
+            <div class="pics2">
+             <img src="sputnik-v.jpg" alt="">
+            </div>
+            <div class="sputnik-info">
+                <span class="heading"><b> ABOUT SPUTNIK-V</b></span>
+                <p>
+                    Sputnik V or Gam-COVID-Vac is an adenovirus viral vector vaccine for COVID-19
+                    developed by the Gamaleya Research Institute of Epidemiology and Microbiology. It is the world's 
+                    first registered combination vector vaccine for the prevention of COVID-19 to be registered on 11 
+                    August 2020 by the Russian Ministry of Health. A phase I safety trial began on 18 June 2020. 
+                    On 4 September 2020, data on 76 participants in a phase I–II trial were published, indicating 
+                    preliminary evidence of safety and an immune response. It is mandatory to give a gap of three weeks
+                    (21 days) between the first and second dose and is only available for citizen above 18 years.
+                    The imported vaccine has been priced at Rs 948 per dose. However, including 5 per cent Goods 
+                    and Services Tax, the price of this vaccine goes up to Rs 995.40 per dose.
+                </p>
+                <center><button class="btn"><a href="https://sputnikvaccine.com/" target="_blank">MORE ABOUT SPUTNIK-V</a></button></center>
+            </div>
+        </div>
+    </section>
+    <section  id="pf">
+        <div class="fizer">
+            <div class="pics3">
+                 <img src="Pfizer.jpg" alt="">
+            </div>
+            <div class="fizer-info">
+                <span class="heading"><b> ABOUT PFIZER</b></span>   
+             <p>
+                  The Pfizer–BioNTech COVID-19 vaccine, sold under the brand name Comirnaty, is an 
+                  mRNA-based COVID-19 vaccine developed by the German company BioNTech. It is authorized for use in 
+                  people aged 12 years and older in some jurisdictions and for people 16 years and older in other 
+                  jurisdictions, to provide protection against infection by the SARS-CoV-2 virus, which causes COVID-19. 
+                  The Pfizer-BioNTech COVID-19 vaccine approved or licensed by the U.S. Food and Drug Administration (FDA).
+                  Coronavirus Disease 2019 (COVID-19) for use in individuals 12 years of age and older. 
+                  Persons age 12 years and older should receive 2 doses at least 21 days apart. Second doses of Pfizer-BioNTech COVID-19
+                  Vaccine administered up to 4 days before the recommended date (4-day grace period) are considered valid.
+             </p>
+             <center><button class="btn"><a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html" target="_blank">MORE ABOUT PFIZER</a></button></center>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="doctors">
+            <center><span class="heading"><b> DOCTORS ON COVID VACCINE</b></span></center>
+            <hr>
+            <!--<div class="doct">-->
+                <!--<div class="row">-->
+                    <div class="doctop">
+                     <p>
+                        There are a lot of people who are saying what is the point of vaccination 
+                        because I know a person who got vaccination and even two weeks of vaccination, 
+                        he got COVID-19. The vaccine prevents you from getting the disease in the form 
+                        of severe illness, hospitalisation, going into the ICUs, or even dying from COVID-19. 
+      
+                     </p>
+                     <img src="rng.jpg" alt="" >
+                     <a href="https://en.wikipedia.org/wiki/Randeep_Guleria" target="_blank"><h3>Dr. Randeep Guleria</h3></a>
+                     <h5>AIIMS DELHI</h5>
+                     <center><b><a href="https://www.newindianexpress.com/nation/2021/apr/21/vaccine-against-covid-19-only
+                        -helps-prevent-severe-illness-aiims-directordr-randeep-guleria-2293003.html" target="_blank">Read More ></a></b></center>
+                    </div>
+                    <div class="doctop">
+                        <p>
+                            It is not difficult to solve the Covid-19 pandemic from the Indian perspective. 
+                            Vaccination is by far the best and the cheapest solution for Covid-19. It has 
+                            been proven beyond doubt that vaccination works. We need to vaccinate everyone 
+                            above the age of 18 years.We believe that they are the vulnerable group.
+                            </p>
+                        <img src="drds.jpg" alt="" >
+                        <a href="https://www.narayanahealth.org/leadership/board-of-directors/dr-devi-shetty" target="_blank"><h3>Dr. Devi Shetty</h3></a>
+                        <h5>NARAYANA FOUNDATION</h5>
+                        <center><b><a href="https://www.indiatoday.in/coronavirus-outbreak/story/dr-devi-shetty-on-covid-vaccination-drive-third-wave-1803008-2021-05-15" target="_blank">Read More ></a></b></center>
+                    </div>
+                    <div class="doctop">
+                        <p>
+                            It prevents us from getting a serious covid infection. A single dose reduces 
+                            transmission of disease to others at home by 50% and creates herd immunity at 
+                            the community level over a period of time. He said in 80% of cases things are 
+                            going to be alright. In 20% of cases, virus is going to get the better of us.</p>
+                        <img src="dras.jpg" alt="" >
+                        <a href="https://www.fortisescorts.in/cardiology/dr-ashok-seth" target="_blank"><h3>Dr. Ashok Seth</h3></a>
+                        <h5>FORTIS ESCORT</h5>
+                        <center><b><a href="https://www.exchange4media.com/coronavirus-news/herd-immunity-comes-when-70-of-the-population-is-vaccinated
+                            -dr-ashok-seth-112925.html" target="_blank">Read More ></a></b></center>
+                       </div>
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            </div>
+    </section>
+    <section>
+        <div class="faqs">
+            <center><span class="heading"><b>FAQ's and Myths About Vaccination</b></span></center>
+
+            <center><p id="fqs"><span class="font">
+                This section mainly comprises of the most frequently asked questions and the myths about Covid Vaccine.
+                There were a lot of rumours about the vaccine so this section is solely meant for clearing all those doubts.
+            <span></p></center>
+            <div class="ques">
+                <span class="font">Where can I register for COVID-19 vaccination?</span>
+                <p>
+                    You can log into the Co-WIN portal using the link www.cowin.gov.in 
+                    and click on the “Register/Sign In yourself” tab to register for 
+                    COVID-19 vaccination   
+                </p>
+            </div>
+            <div class="ques">
+                <span class="font">Can I register for vaccination without Aadhaar card?</span>
+                <p>
+                    Yes, you can register on Co-WIN portal using any of the following ID proofs:
+                    a. Aadhaar card
+                    b. Driving License
+                    c. PAN card
+                    d. Passport
+                    e. Pension Passbook
+                    f. NPR Smart Card
+                    g. Voter ID (EPIC)   
+                </p>
+            </div>
+            <div class="ques">
+                <span class="font">Can I choose the vaccine?</span>
+                <p>
+                    System will show the vaccine being administered in each vaccination centre at the time of 
+                    scheduling an appointment. Beneficiary can choose the vaccination centre as per their 
+                    choice of vaccine being administered.
+                </p>
+            </div>
+            <div class="ques">
+                <span class="font">Can I get vaccinated with 2nd dose in a different State/District?</span>
+                <p>
+                    Yes, you can get vaccinated in any State/District. The only restriction is that you will 
+                    be able to get vaccinated only on those centres which are offering the same vaccine as 
+                    was administered to you on your first dose.   
+                </p>
+            </div>
+            <div class="ques">
+                <span class="font">Where can I download vaccination certificate from?</span>
+                <p>
+                   You can download vaccination certificate from the Co-WIN portal (cowin.gov.in) or the Aarogya 
+                   Setu app or through Digi-Locker by following the simple steps. You may do so by using the mobile 
+                   number used at the time of registration.   
+                </p>
+            </div>
+            <div class="ques">
+                <span class="font">How can I access COVID Vaccination Certificate from DigiLocker?</span>
+                <p>
+                    You can find vaccination certificate in DigiLocker under Ministry of Health and Family Welfare 
+                    under Health category. Click on Covid Vaccine certificate and enter Beneficiary Reference ID 
+                    to access the certificate.   
+                </p>
+            </div>
+            <div></div>
+            <div class="knm">
+            <center><b><a href="https://www.cowin.gov.in/faq" target="_blank">To Know More ></a></b></center>
+        </div>
+    </section>
+    <section>
+        <div class="immunity">
+            <center><span class="heading"><b>Immunisation Tips</b></span>
+            <p id="fqs">
+                Immunization, or immunisation, is the process by which an individual's 
+                immune system becomes fortified against an agent (known as the immunogen).
+                Vaccines work by stimulating the body’s defence mechanisms to provide protection 
+                against infection.
+            </p></center>
+            <div class="main">
+             <img src="main.jpg" alt="">
+            </div>
+            <div class="mask">
+                <center><img src="msk.jpg" alt=""></center>
+                <center><span class="font">Wear a mask.</span>
+                <p>Always wear a mask whenever you go out.</p></center>
+            </div>
+            <div class="hand">
+                <center><img src="hands.jpg" alt=""></center>
+                <center><span class="font">Wash your hand with soaps.</span>
+                <p>Regularly wash your hand with soaps for atleast 2 mins</p></center>
+            </div>
+            <div class="distance">
+            <center><img src="distance.png" alt=""></center>
+            <center><span class="font">Maintain social distancing.</span>
+                <p>Maintain atleast a gap of six-feet to prevent the spread. </p></center>
+            </div>
+            <div class="immu">
+            <center><img src="immu.png" alt=""></center>
+            <center><span class="font">Get Vaccinated.</span>
+                <p>Vaccine provides you immunity to fight the virus. </p></center>
+            </div>
+            </div>
+    </section>
+    <section>
+            <div class="cowin">
+                <center><span class="heading"><b>Not Yet Vaccinated?</b></span>
+                    <p id="fqs">
+                     Not yet vaccinated. No worries. Follow this 4 easy steps and get vaccinated as soon as possible.
+                     Vaccine provides you with immunity and helps to fight the virus and stops it from spreading. Always wear
+                     a mask even you are fully vaccinated. Stay safe stay healthy. You can register now for vaccination and 
+                     listen to the experts as well. 
+                    </p></center>
+                    <hr>
+                <div class="log">
+                    <center><span class="font">Register in Cowin Portal With your details </span>
+                        <p>First register in cowin portal with your phone number and verify your phone number</p></center>
+                    </div>
+                <div class="appo">
+                    <center><span class="font">Schedule an Appointment in nearest camp</span>
+                        <p>Next schedule an appointment at your nearest vaccination camp and that might take time.</p></center>
+                </div>
+                <div class="doses">
+                    <center><span class="font">Take the Dose1 and Dose2 on time</span>
+                        <p>Take your doses on time and should miss the second one with proper gap between them.</p></center>
+                </div>
+                <div class="certificate">
+                    <center><span class="font">Download Your Vaccination certificate.</span>
+                        <p>After getting vaccinated download the certificate and keep it for future references.</p></center>
+                    </div>
+                </div>
+                <div class="expert">
+                    <center><button class="btn"><a href="https://selfregistration.cowin.gov.in/" alt="" target="_blank">Registration for Vaccine</a></button>
+                    <button class="btn"><a href="https://www.youtube.com/channel/UCvScgo6mAvbMEjszK4sSj6g" target="_blank">Listen to the Experts</a></button></center>
+                </div>
+    </section>
+    <footer>
+        <div class="footer-cont">
+            <h3><b>COVIDPEDIA</b></h3>
+            <p>A website meant solely for covid-related issues. We are trying to help people during the time of crisis caused due to pandemic.
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2021 COVIDPEDIA | Designed by MSD</p>
+        </div>
+    </footer>
+
+   </body> 
+</html>

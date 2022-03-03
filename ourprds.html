@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-Store</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link href="first.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="MASK (2).png" width="125px"></a><br>
+                    <h3 style="color:white"><b> COVID-STORE<br> Powered by &#8594 COVIDPEDIA </b></h1>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <h3>
+                            <li><a href="index.html"><b>HOME</a></li>
+                            <li><a href="RecentUpdates.html"><b>RECENT UPDATES</a></li>
+                            <li><a href="vaccine.html"><b>VACCINE RELATED</a></li>
+                            <li><a href="ourprds.html"><b>OUR PRODUCTS</a></li>
+                            <li><a href="about.html"><b>ABOUT US</a></li>
+                        </h3>
+
+                    </ul>
+                </nav>
+                <!-- <img src="cart.jpg" alt="" width="50px" height="50px"> -->
+                 <img src="menu2.jpg" alt=""  height="25px" width="25px" onclick="menutoggle()"> 
+            </div>
+
+            <div class="row">
+                <div class="com-2">
+                    <center><h1 style="color: white;">COVID-19 <br> Helpfull Products!</h1></center><br>
+                    <h3>
+                        <center><p style="color: rgb(255, 255, 255);">
+                            PROTECT YOUR FAMILY <br>
+                        BY BUYING THEM SOME VALUABLE STUFF...!!!</center></p>
+                    </h3>
+                    <center><a href="#prd" class="btn">Explore Now &#8594</a></center>
+
+                </div>
+                <!-- <div class="col-2">
+                   <img src="f1.jpg" alt="">
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- our products -->
+
+    <div class="categories1">
+        <h1 style="color:white; background-color:black;">
+            <center>Product Overview</center>
+        </h1><br>
+        <div class="smallcontainer">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#mask"><img src="m1.jpg" alt=""></a>
+                </div>
+                <div class="col-3">
+                    <a href="#gloves"><img src="g1.jpg" alt=""></a>
+                </div>
+                <div class="col-3">
+                    <a href="#ppe"><img src="p2.webp" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- featured products -->
+    <div class="categories" id="prd">
+        <h1 style="color:rgb(241, 240, 245); background-color:black;">
+            <center>OUR MAJOR PRODUCTS</center>
+        </h1><br>
+        <div class="smallcontainer">
+            <h2 class="title"></h2>
+            <h2
+                style="color:rgb(255, 255, 255) ; background-color:rgb(0, 0, 0); border: 2px solid white;border-radius: 1cm;">
+                <center>OUR MAJOR PRODUCTS &#8594 MASK AND FACE SHIELDS</u></center>
+            </h2><br>
+            <div class="row" id="mask">
+
+                <div class="col-4">
+                    <img src="m1.jpg" alt="">
+                    <h4 style="color:rgb(255, 255, 255) ; background-color:rgb(0, 0, 0); border: 2px solid white;border-radius: 0.1cm;"> 
+                        PREMIUM Under-Armour MASk <br>
+                        Price :: 1.0$ <br>
+                        <div class="rating">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        Avability&#8594 yes
+                    </h4>
+                    <div class="popup" id="popup-1"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 1.0$"<br>PRODUCT :: PREMIUM Under-Armour MASk</h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button> 
+                </div>
+                <div class="col-4">
+                    <img src="fs1.jpg" alt="">
+                    <h4
+                        style="color:rgb(255, 255, 255) ; background-color:black; border: 2px solid white;border-radius: 0.1cm;">
+                        PREMIUM COMPLETELY PROTECTING FACE SHIELD <br>
+                        Price :: 2.0$ <br>
+                        <div class="rating">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        Avability&#8594 yes
+                    </h4>
+                    <div class="popup" id="popup-2"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 2.0$ <br>PRODUCT :: PREMIUM COMPLETELY PROTECTING FACE SHIELD </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button> 
+                </div>
+                <div class="col-4">
+                    <img src="m2.jpg" alt="">
+                    <h4
+                        style="color:rgb(255, 255, 255) ; background-color:rgb(0, 0, 0); border: 2px solid white;border-radius: 0.1cm;">
+                        PREMIUM MASK FAMILY <br>
+                        Price :: 1.0$ <br>
+                        <div class="rating">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        Avability&#8594 yes
+                    </h4>
+                    <div class="popup" id="popup-3"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 1.0$ <br>PRODUCT :: PREMIUM MASK FAMILY</h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+                <div class="col-4">
+                    <img src="fs2.jpg" alt="">
+                    <h4
+                        style="color:rgb(255, 255, 255) ; background-color:rgb(0, 0, 0); border: 2px solid white;border-radius: 0.1cm;">
+                        FACE SHIELD <br>
+                        Price :: 1.0$ <br>
+                        <div class="rating">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        Avability&#8594 yes
+                    </h4>
+                    <div class="popup" id="popup-4"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 1.0$ <br>PRODUCT :: FACE SHIELD </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button> 
+                </div>
+            </div>
+            <center>
+                <h2
+                    style="color:rgb(255, 255, 255) ; background-color:black; border: 2px solid white;border-radius: 1cm;">
+                    MAJOR PRODUCTS &#8594 HAND GLOVES AND SANITIZERS
+            </center>
+            </h2><br>
+            <div class="row" id="gloves">
+
+                <div class="col-4">
+                    <img src="g1.jpg" alt="">
+                    <h4>PREMIUM BLUE HAND GLOVES</h4>
+                    <p>Price :: 1.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    Avability&#8594 yes</p>
+                    <div class="popup" id="popup-5"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 1.0$ <br>PRODUCT :: PREMIUM BLUE HAND GLOVES </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+                <div class="col-4">
+                    <img src="CK.jpg" alt="">
+                    <h4>MINI COVID-KIT</h4>
+                    <p>Price :: 3.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    Avability&#8594 yes</p>
+                    <div class="popup" id="popup-6"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 3.0$ <br>PRODUCT :: MINI COVID-KIT</h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+                <div class="col-4">
+                    <img src="S1.jpg" alt="">
+                    <h4>DETTOL HAND-SANITIZER</h4>
+                    <p>Price :: 1.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    Avability&#8594 yes </p>
+                    <div class="popup" id="popup-7"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 1.0$ <br>PRODUCT :: DETTOL HAND-SANITIZER</h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+                <div class="col-4">
+                    <img src="G3.webp" alt="">
+                    <h4>GLOVES FOR FAMILY</h4>
+                    <p>Price :: 2.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                    </div>
+                    Avability&#8594 yes</p>
+                    <div class="popup" id="popup-8"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 2.0$ <br>PRODUCT :: GLOVES FOR FAMILY </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+
+            </div>
+            <center>
+                <h2
+                    style="color:rgb(255, 255, 255) ; background-color:black; border: 2px solid white;border-radius: 1cm;">
+                    MAJOR PRODUCTS &#8594 PPE KITS
+            </center></u></h2><br>
+            <div class="row" id="ppe">
+
+                <div class="col-4">
+                    <img src="p2.webp" alt="">
+                    <h4>BUKKL-PPE KIT</h4>
+                    <p>Price :: 4.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    Avability&#8594 yes</p>
+                    <div class="popup" id="popup-9"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 4.0$ <br>PRODUCT :: BUKKL-PPE KIT </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+                <div class="col-4">
+                    <img src="p3.webp" alt="">
+                    <h4>BUY 1 GET 1 FREE</h4>
+                    <p>Price :: 3.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                    Avability&#8594 yes</p>
+                    <div class="popup" id="popup-10"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 3.0$ <br>PRODUCT :: PPE KIT </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+                <div class="col-4">
+                    <img src="p4.webp" alt="">
+                    <h4>VOUCH & CE Certified Laminated Seam Taping PPE KIT</h4>
+                    <p>price :: 5.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    Avability&#8594 yes </p>
+                    <div class="popup" id="popup-11"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 5.0$ <br>PRODUCT :: VOUCH & CE Certified Laminated Seam Taping PPE KIT </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+                <div class="col-4">
+                    <img src="p5.jpg" alt="">
+                    <h4>MINI PPE KIT</h4>
+                    <p> Price :: 2.0$ <br>
+                    <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    </div>
+                    Avability&#8594 yes</p>
+                    <div class="popup" id="popup-12"> 
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglepopup()">&times;</div><br><br><br> 
+                          <h3><u>PRICE AND PRODUCT CONFIRMATION</u></h3><br>
+                          <h4>PRICE :: 2.0$ <br>PRODUCT :: MINI PPE KIT </h4><br>
+                          <a href="form.html" class="bun" target="_blank">PROCEED TO PAY</a>
+                        </div>
+                    </div>
+                    <button onclick="togglepopup()"style="height: 30px; width: 60px; border:2px solid black;border-radius:0.2cm;"><i class="fa fa-shopping-cart fa-2x"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- offer -->
+    <div class="offer">
+        <div class="smallcontainer">
+            <div class="row">
+                <div class="coll-2">
+                    <img src="oxi.webp" alt="">
+                </div>
+                <div class="coll-2">
+                    <h2 style="color:black";>Exclusively avaliable on COVID-Store</h2>
+                    <H1>OXIMETER</H1>
+                    <h3 style="color:black";>Price :: 10 $</h3><h3> 50% off </h3><br>
+                    <p><small>Product Details :: Fitlastics Fingertip Pulse Oximeter Machine with Dual Color OLED,
+                     Alarm Function, SpO2 Oxygen Levels, Heart Rate, Perfusion Index Monitor</small></p>
+                    <a href="form.html" class="btn" target="_blank">Buy Now &#8594</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- reviews -->
+
+
+    <div class="advice">
+        <h1>
+            <center>Doctors On Importance of COVID-Prevention Products..!!</center>
+        </h1>
+        <br>
+        <div class="smallcontainer">
+            <div class="row">
+                <div class="col-3">
+                    <p>One should use
+                    Use a sanitiser with 60-70% alcohol content whenever you are travelling. 
+                    Do not miss using sanitiser after interaction with someone who is sick or after touching any surface.
+                    It has been made amply clear that wearing masks can reduce the risk of infection.</p>
+                    <a href="https://www.narayanahealth.org/leadership/board-of-directors/dr-devi-shetty" target="_blank" ><img src="dv.jpg" alt=""></a>
+                    <h3>Dr.Devi Shetty</h3>
+                    
+                </div>
+                <div class="col-3">
+                    <p>It has been made amply clear that wearing masks can reduce the risk of infection. 
+                     There was an initial advisory asking people not to buy surgical masks since it would 
+                    have created a shortage of these masks which are very important for frontline workers such as doctors.</p>
+                    <a href="https://www.medanta.org/doctors/dr-naresh-trehan" target="_blank"><img src="nt2.webp" alt=""></a>
+                    <h3>Dr.Naresh Trehan</h3>
+                </div>
+                <div class="col-3">
+                    <p>Washing hands with soap and water is more effective than using sanitiser.
+                     Those who are travelling and do not have access to water and soap should use hand sanitiser in such a case.
+                     But if hands are loaded with dirt or oil, the effectiveness of sanitiser is comparatively less.</p>
+                    <a href="https://www.maxhealthcare.in/doctor/dr-sharad-joshi" target="_blank"><img src="sh2.jpg" alt=""></a>
+                    <h3>Dr. Sharad Joshi</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-cont">
+            <h3><b>COVID-STORE</b></h3>
+            <br>
+            <h2><b>Powered by &#8594 COVIDPEDIA <img src="MASK (2).png" alt="" width="35px"></b></h2>
+            <br>
+            <p>A website meant solely for covid-related issues. We are trying to help people during the time of crisis
+                caused due to pandemic.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2021 COVIDPEDIA | Designed by MSD</p>
+        </div>
+    </footer>
+<!-- -------------------js for toggle menu---------------- -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "800px"
+        }
+        else{
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+    function togglepopup(){
+      document.getElementById("popup-1").classList.toggle("active");
+      document.getElementById("popup-2").classList.toggle("active");
+      document.getElementById("popup-3").classList.toggle("active");
+      document.getElementById("popup-4").classList.toggle("active");
+      document.getElementById("popup-5").classList.toggle("active");
+      document.getElementById("popup-6").classList.toggle("active");
+      document.getElementById("popup-7").classList.toggle("active");
+      document.getElementById("popup-8").classList.toggle("active");
+      document.getElementById("popup-9").classList.toggle("active");
+      document.getElementById("popup-10").classList.toggle("active");
+      document.getElementById("popup-11").classList.toggle("active");
+      document.getElementById("popup-12").classList.toggle("active");
+      document.getElementById("popup-13").classList.toggle("active");
+    }
+  
+
+</script>
+
+</body>
+</html>
